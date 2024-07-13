@@ -4,7 +4,7 @@
 -- name, string (255 characters)
 -- If table exists, script will not fail, can be executed on any database
 
-DROP TABLE users IF EXIST;
+DROP TABLE users IF EXISTS;
 CREATE TABLE users(
     id INT NOT NULL AUTO_INCREMENT,
     email VARCHAR(255) NOT NULL UNIQUE,
